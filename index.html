@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Jeu casse briques</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href=style.css>
+    </head>
+  <body>
+    <div id= "wrapper">
+        <div id="intro">  
+            <form method="post" action="score.php">
+              <label for="player"> Votre pseudo, pour que le jeu démarre: </label> 
+              <input id ="player" type="text" name="player" value=""> 
+              <input type="button" id="nextpage" value="Joueur au jeu">
+            </form>
+            <p id="regex"> Entrez un pseudo valide! </p>
+        </div>
+
+        <span id="chronotime">Temps écoulé: 0:00:00:00</span>
+        <form name="chronoForm">
+            <input type="button" id="pause" value="Pause!"/>
+            <input type="button" id="relaunch" value="Relancez la partie!"/>
+
+        </form>
+
+        <div id="game">
+
+            <canvas id="canvas" width="800" height="600">
+
+            </canvas>
+
+        </div>   
+        <a href="https://geury.bes-webdeveloper-seraing.be/jeu/resultat.php">Voir la page des scores</a>
+    </div>  
+    
+    <script src="jquery.js"></script>
+        <script src="main.js"></script>
+     
+    </body>
+</html>

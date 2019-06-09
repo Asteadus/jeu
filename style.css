@@ -1,0 +1,15 @@
+#wrapper{
+    width:1200px;
+    margin:0 auto;
+    background-color:#34495e;
+    padding-left: 300px;
+    color:#e3dae4;
+}
+canvas{
+    border:1px solid black;
+    margin: 0 auto;
+    background-color:#e3dae4;
+}
+a{
+   color:#e3dae4; 
+}
